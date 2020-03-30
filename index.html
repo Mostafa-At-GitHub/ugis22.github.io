@@ -24,7 +24,7 @@
     <meta name="keywords" content="Data Scientist, portfolio, machine learning">
   </head>
   <body>
-        <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar">
           <ul id="nav-ul" class="nav-ul">
             <li>
               <a class="welcome" href="#welcome-section">About me</a>
@@ -37,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        <section id="welcome-section" class="welcome-section">
+      <section id="welcome-section" class="welcome-section">
           <div class="animated-title">
               <div class="text-top">
                 <div>
@@ -50,83 +50,167 @@
               </div>
           </div>
         </section>
-        <section id="projects" class="projects">
-          <h2 class="project-header">What I've done</h2>
-          <div class="project-grid">
-              <div id="datascientist" class="datascientist">
-                  <h4>Data Scientist</h4>
-                  <div id="imgds1">
-                     <img>
-                  </div>
-                  <div id="pfords1" class="paragrahs-project">
-                      <p>Experience</p>
-                      <p>Experience 1</p>
-                      <p>Experience 2</p>
-                  </div>
-                  <div id="imgds2">
-                     <img>
-                  </div>
-                  <div id="pfords2" class="paragrahs-project">
-                      <a href="">Independent Projects</a>
-                      <p>Here may be here</p>
-                  </div>
-              </div>
-              <div id="teaching" class="teaching">
-                  <h4>Teaching</h4>
-                  <div id="imgteach">
-                     <img>
-                  </div>
-                  <div id="pforteaching" class="paragrahs-project">
-                      <a href="">Regular Expressions in Python</a>
-                      <p>Data Camp course</p>
-                      <p>Learn how to manage ReGex in Python</p>
-                  </div>
-              </div>
-              <div id="biologist" class="biologist">
-                  <h4>Researching</h4>
-                  <div id="imgresearch">
-                     <img>
-                  </div>
-                  <div id="pforresearch" class="paragrahs-project">
-                      <a href="">Research Publications</a>
-                      <p>Some of my work as a researcher</p>
-                      <p>Before I start working as a DS, I work in Academia</p>
-                  </div>
-              </div>
+      <section id="projects" class="projects">
+        <div id="project_container" class="project_container">
+              <input hidden type="radio" name="carrousel" id="data_scientist_button" checked/>
+              <input hidden type="radio" name="carrousel" id="teaching_button"/>
+              <input hidden type="radio" name="carrousel" id="research_button"/>
+              <input hidden type="radio" name="carrousel" id="education_button"/>
+           <div id="project_navigation">
+               <label for="data_scientist_button" class="label_ds"> <span>Data Scientist</span> </label>
+               <label for="teaching_button" class="label_tea"> <span>Teaching</span> </label>
+               <label for="research_button" class="label_res"> <span>Research</span> </label>
+               <label for="education_button" class="label_edu"> <span>Education</span> </label>
+            </div>
+           <div id="project_grid" class="project-grid">
+               <div class="project_wrapper">
+                    <section id="datascientist" class="datascientist_panel">
+                       <p>
+                           <strong class="job_title">Data Scientist</strong><br/>
+                           Digital Harvest<br/>
+                           07-2019-Present
+                       </p>
+                       <p>
+                           <strong class="job_title">Data Scientist</strong><br/>
+                           Open Knowledge Foundation Argentina<br/>
+                           01/2019-07/2019
+                       </p>
+                       <h3>Independent Projects</h3>
+                       <div class="grid_projects">
+                               <a href="https://github.com/ugis22/clustering_analysis" target="_blank" class="project_item">
+                               <p>Customer Segmentation</p>
+                               <img src="https://miro.medium.com/max/1400/1*pmjW1GvQeTj4ntTzor4w_A.png" alt="five clusters in a x and y axis" class="image_project">
+                               </a>
+                               <a href="https://github.com/ugis22/analysing_twitter" target="_blank" class="project_item">
+                               <p>Twitter Sentiment Analysis</p>
+                               <img src="https://miro.medium.com/max/2000/1*ex3gjAfvaV3Ub9Me7kYPXQ.png" alt="Thor and Captain America discussing about Keras library" class="image_project">
+                               </a>
+                               <a href="https://github.com/ugis22/music_recommender" target="_blank" class="project_item">
+                               <p> Music Recommender</p>
+                               <img src="https://miro.medium.com/max/1066/1*MnedC576EFf7dfeKmPBkiQ.png" alt="A women likes a song so it is being recommended something similar" class="image_project">
+                               </a>
+                       </div>
 
+                    </section>
+                    <section id="teaching" class="teaching_panel">
+                        <p>
+                            <strong class="job_title">Online Instructor</strong><br/>
+                            <a href="https://www.datacamp.com/courses/regular-expressions-in-python">Regular Expression in Python</a><br/>
+                            Data Camp<br/>
+                            <span class="year">01/2019-Present</span>
+                        </p>
+                         <p >
+                            <strong class="job_title">Online Mentor</strong><br/>
+                            Data Science programme<br/>
+                            Acamica<br/>
+                            <span class="year">05/2019-11/2019</span>
+                        </p>
+                        <p >
+                            <strong class="job_title">Mentor</strong><br/>
+                            Data Science & Python<br/>
+                            Women in Data Science programme-Media Chicas<br/>
+                            <span class="year">07/2019-08/2019</span>
+                        </p>
+
+                        <p>
+                            <strong class="job_title">Teaching Assistant</strong><br/>
+                            Matematical Analysis<br/>
+                            Universidad Nacional de Luján<br/>
+                            <span class="year">06/2015-07/2015</span>
+                        </p>
+                    </section>
+                    <section id="research" class="research_panel">
+                        <p>
+                            Through my PhD, I encounter wonderful things: trying to dissect a complicated phenomenon by
+                            understanding it and converting it into simpler questions, gather information about it to
+                            establish a background, planning and performing experiments to answer those questions,
+                            and finally interpreting and communicating our results in
+                            <a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=Inzaugarat" target="_blank">
+                                research papers</a>, or orally at several conferences.
+                        </p>
+                        <p>As well, the possibility of doing several internships in California, USA, allowed me to meet an
+                            amazing research group that help me shape my character as a researcher and also as a person.
+                        </p>
+                         <p>As a postdoc in Argentina and Germany, I really enjoyed managing projects as well as mentoring
+                             and supervising students; it’s something which I personally find rewarding for
+                            getting not only to teach what I know, but also to learn from the different
+                            experiences and people.
+                         </p>
+                         <p>
+                             After many years in Academia, I made my
+                             <a href="https://medium.com/@meinzaugarat/transitioning-to-data-science-my-journey-so-far-46a41efcec75"
+                                target="_blank">transition to the Data Science field</a> which
+                             I found was the right setting to apply my skills and better satisfy my vision on life
+                             and work balance.
+
+                        </p>
+                    </section>
+                    <section id="education" class="education_panel">
+                       <p>
+                           <strong class="job_title">PhD in Microbiology and Immunology</strong><br/>
+                           Universidad de Buenos Aires<br/>
+                           2008-2013
+                       </p>
+                       <p>
+                           <strong class="job_title"> Licenciate degree in Biological Sciences</strong><br/>
+                           Universidad Nacional de Luján<br/>
+                           2002-2008
+                       </p>
+                       <h3>Online Specializations</h3>
+                       <p>
+                           <strong class="job_title">Applied Data Science with Python</strong><br/>
+                           University of Michigan through Coursera<br/>
+                           April 2018
+                       </p>
+                        <p>
+                           <strong class="job_title">Bioinformatics</strong><br/>
+                           University of California San Diego through Coursera<br/>
+                           Jan 2018
+                       </p>
+                       <p>
+                           <strong class="job_title">Genomic Data Science</strong><br/>
+                           Johns Hopkins University through Coursera<br/>
+                           May 2017
+                       </p>
+
+
+
+                    </section>
+               </div>
           </div>
-        </section>
-        <section id="letsconect" class="letsconect">
+        </div>
+      </section>
+      <section id="letsconect" class="letsconect">
           <div class="contact-section-header">
             <h2>Want to connect?</h2>
           </div>
           <div class="contact-links">
               <div class="all-contact-icons">
                   <a href="mailto:mariaeugeniainzaugarat@gmail.com?subject=Contact" class="contacticons">
-                    <i class="fas fa-at">
+                    <i class="fas fa-at fa-lg">
                     </i>
-                        Email me
+                      &nbsp;Email me
                    </a>
 
                   <a href="https://twitter.com/EugeInzaugarat"  target="_blank" class="contacticons">
-                    <i class="fab fa-twitter">
+                    <i class="fab fa-twitter fa-lg">
                     </i>
-                      Find me
-                  </a>
-                  <a href="https://www.linkedin.com/in/meinzaugarat/"  target="_blank" class="contacticons">
-                    <i class="fab fa-linkedin-in">
-                    </i>
-                      Work with me
-                  </a>
-                  <a id="profile-link" href="https://github.com/ugis22"  target="_blank" class="contacticons">
-                    <i class="fab fa-github-alt">
-                    </i>
-                      See my code
+                      &nbsp;Find me
                   </a>
                   <a href="https://medium.com/@meinzaugarat"  target="_blank" class="contacticons">
-                    <i class="fab fa-medium-m">
+                    <i class="fab fa-medium-m fa-lg">
                     </i>
-                      Read me
+                      &nbsp;Read me
+                  </a>
+                  <a id="profile-link" href="https://github.com/ugis22"  target="_blank" class="contacticons">
+                    <i class="fab fa-github-alt fa-lg">
+                    </i>
+                      &nbsp;See my code
+                  </a>
+                  <a href="https://www.linkedin.com/in/meinzaugarat/"  target="_blank" class="contacticons">
+                    <i class="fab fa-linkedin-in fa-lg">
+                    </i>
+                      &nbsp;My work history
                   </a>
               </div>
           </div>
